@@ -1,9 +1,14 @@
 package org.talkevents.talkevents.services;
 
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import org.talkevents.talkevents.dtos.SaveLocationRecordDto;
+import org.talkevents.talkevents.dtos.UpdateLocationRecordDto;
 import org.talkevents.talkevents.entities.Location;
 import org.talkevents.talkevents.repositories.LocationRepository;
+
+import java.util.List;
+import java.util.UUID;
 
 @Service
 public class LocationService {

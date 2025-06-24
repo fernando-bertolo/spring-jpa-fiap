@@ -4,8 +4,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.talkevents.talkevents.dtos.SaveLocationRecordDto;
+import org.talkevents.talkevents.dtos.UpdateLocationRecordDto;
 import org.talkevents.talkevents.entities.Location;
 import org.talkevents.talkevents.services.LocationService;
+
+import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/location")

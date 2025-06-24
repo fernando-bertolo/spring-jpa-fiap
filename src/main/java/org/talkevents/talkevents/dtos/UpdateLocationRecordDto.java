@@ -1,8 +1,10 @@
 package org.talkevents.talkevents.dtos;
 
-public record SaveLocationRecordDto(
+import java.util.UUID;
+
+public record UpdateLocationRecordDto(
+        UUID id,
         String name,
         String address,
         int capacity
-) {
-}
+) {}

@@ -28,7 +28,7 @@ public class Location {
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToOne()
-    @JoinColumn(name = "event_id")
+    @JoinColumn(name = "eventId")
     private Event event;
 
     public UUID getId() {
