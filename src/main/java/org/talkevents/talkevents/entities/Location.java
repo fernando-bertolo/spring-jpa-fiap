@@ -4,12 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "Location")
-public class Location {
+public class Location implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 

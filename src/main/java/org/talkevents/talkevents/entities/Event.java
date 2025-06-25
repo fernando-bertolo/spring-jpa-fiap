@@ -33,8 +33,8 @@ public class Event implements Serializable {
     @ManyToMany()
     @JoinTable(
             name = "event_attendee",
-            joinColumns = @JoinColumn(name = "event_id"),
-            inverseJoinColumns = @JoinColumn(name = "attendee_id")
+            joinColumns = @JoinColumn(name = "eventId"),
+            inverseJoinColumns = @JoinColumn(name = "attendeeId")
     )
     private Set<Attendee> attendees = new HashSet<>();
 

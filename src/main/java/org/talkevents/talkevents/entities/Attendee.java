@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +12,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "Attendee")
-public class Attendee {
+public class Attendee implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
